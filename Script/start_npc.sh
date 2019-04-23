@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ex;
 
+# 启动容器中的crontab
+/etc/init.d/crond start;
 # 启动容器中的mysql
 /etc/init.d/mysqld start;
 # 配置mysql初始数据库
