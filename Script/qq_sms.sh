@@ -9,7 +9,7 @@ Gnumber=${1}
 
 # coolq中定义的host和port
 API_ADDR=127.0.0.1
-API_PORT=5011
+API_PORT=5700
 
 if echo 'a'|telnet -e a $API_ADDR $API_PORT &> /dev/null
 then
@@ -17,7 +17,7 @@ then
     message=$(echo -e "${2}"|od -t x1 -A n -v -w10000 | tr " " %)
 
     # 发送信息
-    api_url="http://$API_ADDR:$API_PORT/send_group_msg_async?group_id=${Gnumber}&message=${message}"
+    api_url="htt://$API_ADDR:$API_PORT/send_group_msg_async?group_id=${Gnumber}&message=${message}"
     set -x
     curl $api_url
     set +x
