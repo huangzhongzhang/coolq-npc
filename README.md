@@ -1,11 +1,6 @@
 # NPC 使用说明
 
-### ！！！腾讯已于2019年1月1日关闭WebQQ接口，该项目已停止维护。
-以 Mojo-Webqq-Docker 为基础，具备 smartreply 和 openqq 等功能的 NPC。
-
-## Mojo::Webqq项目地址:
-[Mojo::Webqq](https://github.com/sjdy521/Mojo-Webqq)  
-感谢[灰灰](https://github.com/sjdy521)的倾情付出。
+以 酷Q 为基础，具备 smartreply 和 openqq 等功能。
 
 ## 包含功能
 
@@ -31,6 +26,8 @@ $ docker run -d --name cqhttp \
 ```
 
 然后访问 `http://<你的IP>:9000/` 进入 noVNC（默认密码 `MAX8char`），登录 酷Q，即可开始使用（插件已自动启用，配置文件也根据启动命令的环境变量自动生成了）。一般情况下，你不太需要关注插件是如何存在于容器中的。
+`smartreply` 功能需要在图灵的配置中填入自行申请的 API Key。
+
 
 更多配置见：[richardchien/cqhttp](https://cqhttp.cc/docs/4.10/#/Docker)
 
