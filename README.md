@@ -2,6 +2,8 @@
 
 以 酷Q 为基础，具备 smartreply 和 openqq 等功能。
 
+* 后续的更新将提交到新的代码仓库：https://git.huangzz.xyz/npc/coolq-npc
+
 ## 包含功能
 
 定时发送消息；
